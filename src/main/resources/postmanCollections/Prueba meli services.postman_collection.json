@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "f79d2b82-4b62-4cac-a3da-428a1a30747c",
+		"name": "Prueba meli services",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "stats",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/pruebameli/stats",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pruebameli",
+						"stats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ismutant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\"ATGCGA\",\"CAGTGC\",\"TTATGT\",\"AGAAGG\",\"CCCCTA\",\"TCACTG\"]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/pruebameli/ismutant",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pruebameli",
+						"ismutant"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
